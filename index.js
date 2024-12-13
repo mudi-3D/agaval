@@ -321,6 +321,8 @@ class MudiExperience {
         /** Create eventView*/
         this.sendEventViewer();
 
+        console.log('mudi Experience prendido')
+
     };
 
     /** Petición para renderizar los elementos Mudi */
@@ -336,50 +338,6 @@ class MudiExperience {
             this.valueRequest++;
         }
     };
-
-
-    /** Observador del btn Mudi */
-    // observer3DBtnView() {
-    //     console.log('verificando existencia de btn Mudi')
-
-    //     if (!document.body.querySelector('.btnsMudiContainer')) {
-
-    //         const skuElement = document.head.querySelector('[property="product:sku"]').getAttribute('content');
-    //         const container = document.querySelector('.vtex-store-components-3-x-triggerContainer.vtex-store-components-3-x-triggerContainer--pdp.bg-transparent.pa0.bw0.dib');
-    //         const realSku = skuElement.replace(/[\s\uFEFF\xA0]+$/g, '').replace(/^[\s\uFEFF\xA0]+/g, '');
-
-    //         this.experienceOn(realSku, container);
-    //         return;
-    //     };
-
-    //     this.counterObserver++;
-    //     if (this.counterObserver === 1500) {
-    //         console.log('termine la verificación del boton')
-    //         return;
-    //     } else {
-    //         requestAnimationFrame(this.observer3DBtnView);
-    //     }
-    // };
-
-    // verifyProcess() {
-
-    //     const skuElement = document.head.querySelector('[property="product:sku"]').getAttribute('content');
-    //     const container = document.querySelector('.vtex-store-components-3-x-triggerContainer.vtex-store-components-3-x-triggerContainer--pdp.bg-transparent.pa0.bw0.dib');
-
-    //     if (!skuElement || !container) {
-    //         requestAnimationFrame(this.verifyProcess);
-    //         return;
-    //     };
-
-    //     const realSku = skuElement.replace(/[\s\uFEFF\xA0]+$/g, '').replace(/^[\s\uFEFF\xA0]+/g, '');
-
-    //     this.skuNumber = realSku;
-    //     this.fatherContainer = container;
-
-    //     this.experienceOn(realSku, container);
-
-    //     setTimeout(this.observer3DBtnView, 1500);
-    // };
 
 };
 
